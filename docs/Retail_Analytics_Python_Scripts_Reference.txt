@@ -1,0 +1,368 @@
+=========================================================
+RETAIL ANALYTICS PLATFORM
+PYTHON SCRIPTS REFERENCE GUIDE
+Author : Umesh Zure
+Date   : 22-Oct-2026
+=========================================================
+
+PURPOSE
+-------
+This document contains all Python scripts used during the
+Retail Analytics Platform setup and Exploratory Data Analysis
+(EDA) phase along with explanations.
+
+=========================================================
+SECTION 1 - LIBRARY IMPORTS
+=========================================================
+
+Code:
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+Purpose:
+--------
+Imports required analytics and visualization libraries.
+
+Library Usage:
+--------------
+pandas      -> Data analysis and manipulation
+numpy       -> Numerical processing
+matplotlib  -> Chart generation
+seaborn     -> Advanced statistical visualization
+
+=========================================================
+SECTION 2 - ENVIRONMENT VALIDATION
+=========================================================
+
+Code:
+
+print("=" * 50)
+print("Retail Analytics Platform Ready!")
+print("=" * 50)
+
+print("Pandas Version:", pd.__version__)
+print("NumPy Version :", np.__version__)
+
+Purpose:
+---------
+Verifies successful installation of required Python libraries.
+
+Output:
+--------
+Library versions currently installed in the environment.
+
+=========================================================
+SECTION 3 - PYTHON EXECUTABLE VALIDATION
+=========================================================
+
+Code:
+
+import sys
+
+print(sys.executable)
+
+Purpose:
+---------
+Checks which Python interpreter is being used by Jupyter.
+
+Business Value:
+---------------
+Ensures notebook is connected to the correct virtual environment.
+
+Expected Result:
+
+E:\UzureAIEngineer\Retail-Analytics-Platform\.venv\Scripts\python.exe
+
+=========================================================
+SECTION 4 - TEST DATAFRAME CREATION
+=========================================================
+
+Code:
+
+sales_data = pd.DataFrame({
+    "Store": ["Mumbai", "Pune", "Delhi", "Bangalore"],
+    "Revenue": [125000, 98000, 145000, 115000]
+})
+
+sales_data
+
+Purpose:
+---------
+Creates a sample dataset for testing.
+
+Business Use:
+-------------
+Validates dataframe creation and visualization capability.
+
+=========================================================
+SECTION 5 - FIRST VISUALIZATION
+=========================================================
+
+Code:
+
+sales_data.plot(
+    x="Store",
+    y="Revenue",
+    kind="bar",
+    figsize=(8,4),
+    title="Store Revenue Comparison"
+)
+
+plt.show()
+
+Purpose:
+---------
+Generates first bar chart.
+
+Business Question:
+------------------
+Which store generates the highest revenue?
+
+=========================================================
+SECTION 6 - LOAD RETAIL DATASET
+=========================================================
+
+Code:
+
+df = pd.read_csv("../data/sample_data/retail_sales.csv")
+
+df.head()
+
+Purpose:
+---------
+Loads retail sales data into a pandas dataframe.
+
+Business Use:
+-------------
+Beginning of real-world retail analytics workflow.
+
+=========================================================
+SECTION 7 - DATASET INFORMATION
+=========================================================
+
+Code:
+
+print("Rows    :", df.shape[0])
+print("Columns :", df.shape[1])
+
+df.info()
+
+Purpose:
+---------
+Provides dataset profiling.
+
+Output:
+--------
+Total Rows
+Total Columns
+Column Datatypes
+Null Value Information
+
+Business Use:
+-------------
+Initial Data Quality Assessment.
+
+=========================================================
+SECTION 8 - DATA QUALITY CHECK
+=========================================================
+
+Code:
+
+df.isnull().sum()
+
+Purpose:
+---------
+Checks for missing values.
+
+Business Use:
+-------------
+Ensures data completeness before analysis.
+
+=========================================================
+SECTION 9 - KPI CALCULATION
+=========================================================
+
+Code:
+
+total_revenue = df["Revenue"].sum()
+total_orders = len(df)
+average_revenue = df["Revenue"].mean()
+total_quantity = df["Quantity"].sum()
+
+print("Total Revenue :", total_revenue)
+print("Total Orders :", total_orders)
+print("Average Revenue :", round(average_revenue,2))
+print("Total Quantity :", total_quantity)
+
+Purpose:
+---------
+Calculates core retail business KPIs.
+
+KPIs:
+-----
+Total Revenue
+Total Orders
+Average Revenue
+Total Quantity Sold
+
+Business Audience:
+------------------
+Retail Executives
+Store Managers
+Business Analysts
+
+=========================================================
+SECTION 10 - STORE PERFORMANCE ANALYSIS
+=========================================================
+
+Code:
+
+store_sales = (
+    df.groupby("Store")["Revenue"]
+      .sum()
+      .sort_values(ascending=False)
+)
+
+store_sales
+
+Purpose:
+---------
+Aggregates revenue by store.
+
+Business Question:
+------------------
+Which store performs best?
+
+Output:
+--------
+Store Ranking by Revenue
+
+=========================================================
+SECTION 11 - STORE PERFORMANCE VISUALIZATION
+=========================================================
+
+Code:
+
+store_sales.plot(
+    kind="bar",
+    figsize=(8,4),
+    title="Revenue by Store",
+    color="steelblue"
+)
+
+plt.ylabel("Revenue")
+plt.show()
+
+Purpose:
+---------
+Visual representation of store performance.
+
+Business Use:
+-------------
+Executive Dashboard Visualization.
+
+=========================================================
+SECTION 12 - CATEGORY ANALYSIS
+=========================================================
+
+Code:
+
+category_sales = (
+    df.groupby("Category")["Revenue"]
+      .sum()
+      .sort_values(ascending=False)
+)
+
+category_sales
+
+Purpose:
+---------
+Identifies highest revenue generating categories.
+
+Business Question:
+------------------
+Which category contributes most to revenue?
+
+=========================================================
+SECTION 13 - CATEGORY VISUALIZATION
+=========================================================
+
+Code:
+
+category_sales.plot(
+    kind="bar",
+    figsize=(8,4),
+    title="Revenue by Category",
+    color="green"
+)
+
+plt.ylabel("Revenue")
+plt.show()
+
+Purpose:
+---------
+Visual analysis of category performance.
+
+=========================================================
+SECTION 14 - PRODUCT PERFORMANCE ANALYSIS
+=========================================================
+
+Code:
+
+product_sales = (
+    df.groupby("Product")["Revenue"]
+      .sum()
+      .sort_values(ascending=False)
+)
+
+product_sales
+
+Purpose:
+---------
+Identifies top-performing products.
+
+Business Question:
+------------------
+Which products drive the highest sales?
+
+=========================================================
+SECTION 15 - BUSINESS INSIGHTS
+=========================================================
+
+Purpose:
+---------
+Convert analytics into actionable recommendations.
+
+Example Insights:
+-----------------
+1. Highest revenue generating store.
+2. Highest revenue generating category.
+3. Top product.
+4. Inventory optimization opportunities.
+5. Future growth recommendations.
+
+=========================================================
+NEXT PHASE
+=========================================================
+
+Upcoming Development:
+
+03_Executive_Dashboard_Data_Prep.ipynb
+
+Scope:
+
+- Dashboard Data Preparation
+- Power BI Integration
+- Advanced Retail KPIs
+- Customer Segmentation
+- RFM Analysis
+- Churn Analytics
+- Demand Forecasting
+- AI Insights Generation
+
+=========================================================
+END OF DOCUMENT
+=========================================================
