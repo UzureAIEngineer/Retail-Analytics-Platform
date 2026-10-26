@@ -4,7 +4,13 @@
 
 Retail Analytics Platform is an end-to-end analytics portfolio project demonstrating how modern retailers can leverage data, analytics, machine learning, and AI to drive business growth and customer engagement.
 
-This project showcases real-world retail analytics use cases including sales performance analysis, customer segmentation, churn prediction, demand forecasting, and AI-powered business insights.
+This project showcases real-world retail analytics use cases including sales performance analysis, customer segmentation, churn prediction, demand forecasting, and AI-powered business insights using below technology stacks and techniques.
+
+Python
+EDA
+Pandas
+Visualization
+Business Analytics
 
 ---
 
