@@ -70,6 +70,12 @@ The platform addresses key business questions:
 - Conversational Analytics
 
 ---
+### Latest Updates
+- Completed Retail EDA notebook
+- Product sales analysis added
+- GitHub portfolio enhancement in progress
+  
+---
 
 ## Technology Stack
 
