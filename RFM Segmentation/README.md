@@ -63,7 +63,7 @@ The output generates customer segments and insights that support business decisi
 
 ---
 
-## The method evaluates customers based on:
+The method evaluates customers based on:
 
 Metric	Definition: 
 
