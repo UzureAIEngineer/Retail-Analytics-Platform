@@ -65,12 +65,11 @@ The output generates customer segments and insights that support business decisi
 
 The method evaluates customers based on:
 
-Metric	Definition: 
-
-
-Recency (R)	    How recently a customer made a purchase
+Metric	Definition
+Recency (R)	How recently a customer made a purchase
 Frequency (F)	How often a customer makes purchases
 Monetary (M)	How much money the customer spends
+
 
 By combining these three metrics, customers can be grouped into meaningful business segments that support targeted marketing, customer retention, and revenue optimization strategies.
 
