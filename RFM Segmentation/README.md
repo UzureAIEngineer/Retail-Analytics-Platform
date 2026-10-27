@@ -61,18 +61,22 @@ The Retail Analytics Platform implements RFM analysis using Python-based data pr
 
 The output generates customer segments and insights that support business decision-making and marketing optimization strategies.
 
+---
 
-The method evaluates customers based on:
+## The method evaluates customers based on:
 
 Metric	Definition: 
 
-Recency (R)	How recently a customer made a purchase
+
+Recency (R)	    How recently a customer made a purchase
 Frequency (F)	How often a customer makes purchases
 Monetary (M)	How much money the customer spends
 
 By combining these three metrics, customers can be grouped into meaningful business segments that support targeted marketing, customer retention, and revenue optimization strategies.
 
-Business Objective
+---
+
+## Business Objective
 
 The objective of RFM Analysis is to:
 
@@ -82,19 +86,25 @@ Detect customers at risk of churn
 Optimize marketing campaigns
 Improve customer retention
 Increase customer lifetime value (CLV)
-Customer Segments
+
+---
+
+## Customer Segments
 
 Typical customer segments include:
 
-Segment	DescriptionChampions	Recent, frequent and high-spending customers
+Segment	Description
+Champions	Recent, frequent and high-spending customers
 Loyal Customers	Repeat customers with strong engagement
 Potential Loyalists	Customers showing growing engagement
 Recent Customers	New customers with recent purchases
 At Risk	Previously active customers showing reduced engagement
 Lost Customers	Customers likely to have churned
 
+---
 
-Analytics Techniques Used
+## Analytics Techniques Used
+
 Data Aggregation
 Customer Behavior Analysis
 Recency Scoring
@@ -109,7 +119,9 @@ NumPy
 Matplotlib
 Jupyter Notebook
 
-Deliverables
+---
+
+## Deliverables
 
 ✅ RFM Score Calculation
 
@@ -121,8 +133,9 @@ Deliverables
 
 ✅ Customer Retention Opportunities
 
+---
 
-Documentation (docs/RFM_Analysis_Overview.md)
+## Documentation (docs/RFM_Analysis_Overview.md)
 
 
 docs/
