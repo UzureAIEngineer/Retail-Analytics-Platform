@@ -147,6 +147,23 @@ Retail-Analytics-Platform/
 
 ---
 
+
+## Project Status
+
+| Phase | Status |
+|---------|---------|
+| Exploratory Data Analysis | ✅ Completed |
+| Executive Dashboard Data Preparation | ✅ Completed |
+| Customer Segmentation (RFM) | ✅ Completed |
+| Customer Churn Analytics | ⏳ In Progress |
+| Demand Forecasting | ⏳ Planned |
+| AI Retail Insights | ⏳ Planned |
+| Retail Analytics Agent | ⏳ Planned |
+
+
+---
+
+
 ## Future Enhancements
 
 - Azure AI Integration
