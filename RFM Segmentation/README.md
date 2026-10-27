@@ -1,0 +1,67 @@
+Customer Segmentation using RFM Analysis
+Overview
+
+RFM (Recency, Frequency, Monetary) Analysis is a widely used customer segmentation technique in retail analytics that helps businesses identify and understand customer purchasing behavior.
+
+The method evaluates customers based on:
+
+Metric	DefinitionRecency (R)	How recently a customer made a purchase
+Frequency (F)	How often a customer makes purchases
+Monetary (M)	How much money the customer spends
+
+By combining these three metrics, customers can be grouped into meaningful business segments that support targeted marketing, customer retention, and revenue optimization strategies.
+
+Business Objective
+
+The objective of RFM Analysis is to:
+
+Identify high-value customers
+Recognize loyal customers
+Detect customers at risk of churn
+Optimize marketing campaigns
+Improve customer retention
+Increase customer lifetime value (CLV)
+Customer Segments
+
+Typical customer segments include:
+
+Segment	DescriptionChampions	Recent, frequent and high-spending customers
+Loyal Customers	Repeat customers with strong engagement
+Potential Loyalists	Customers showing growing engagement
+Recent Customers	New customers with recent purchases
+At Risk	Previously active customers showing reduced engagement
+Lost Customers	Customers likely to have churned
+Analytics Techniques Used
+Data Aggregation
+Customer Behavior Analysis
+Recency Scoring
+Frequency Scoring
+Monetary Scoring
+Quantile-Based Segmentation
+Customer Classification
+Technology Stack
+Python
+Pandas
+NumPy
+Matplotlib
+Jupyter Notebook
+Deliverables
+
+✅ RFM Score Calculation
+
+✅ Customer Segmentation
+
+✅ Segment Distribution Analysis
+
+✅ Business Insights and Recommendations
+
+✅ Customer Retention Opportunities
+
+Documentation Version (docs/RFM_Analysis_Overview.md)
+
+Create:
+
+Plain Text
+docs/
+└── RFM_Analysis_Overview.md
+
