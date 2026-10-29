@@ -1,0 +1,7 @@
+Customer_ID,Recency,Frequency,Monetary,R_Score,F_Score,M_Score,RFM_Score,Segment,Churn_Status
+CUST001,0,3,122000,3,3,3,333,Champions,Low Risk
+CUST002,3,2,30000,2,2,2,222,Potential Loyalists,Medium Risk
+CUST003,2,2,93000,2,3,3,233,Loyal Customers,Low Risk
+CUST004,5,1,12000,1,1,1,111,At Risk,High Risk
+CUST005,4,1,35000,1,1,2,112,At Risk,Medium Risk
+CUST006,1,1,4000,3,2,1,321,Loyal Customers,Low Risk
